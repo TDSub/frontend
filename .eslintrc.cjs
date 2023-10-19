@@ -21,6 +21,7 @@ module.exports = {
     'prettier',
     '@typescript-eslint',
     'simple-import-sort',
+    'unused-imports'
   ],
   extends: [
     'eslint:recommended',
@@ -32,10 +33,12 @@ module.exports = {
     'plugin:react-hooks/recommended',
   ],
   rules: {
+    'prettier/prettier': ['error'],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off',
     'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error'
+    'simple-import-sort/exports': 'error',
+    'unused-imports/no-unused-imports': 'error',
   }
 }
