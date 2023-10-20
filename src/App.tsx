@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import Navbar from './components/Navbar.tsx'
 import Home from './pages/Home.tsx'
+import OwnerPage from './pages/Owner.tsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Box sx={theme => ({ height: '100%', backgroundColor: theme.palette.background.default })}>
         <Routes>
           <Route index element={<Home />} />
+          <Route path='owner' element={<OwnerPage />} />
         </Routes>
       </Box>
     </Box>
